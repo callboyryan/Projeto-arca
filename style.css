@@ -455,22 +455,27 @@ p {
     color: var(--main-color);
   }
   
-  @media (max-width: 991px) {
-    html {
-      font-size: 55%;
-    }
-  
-    .header {
-      padding: 1.5rem 2rem;
-    }
-  
-    section {
-      padding: 2rem 7%;
-    }
-  
-    #menu-btn {
-      display: inline-block;
-    }
+ #menu-btn {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem 7%;
+  }
+
+  #menu-btn {
+    display: inline-block;
+  }
+}
   
     .header .navbar {
       position: absolute;
