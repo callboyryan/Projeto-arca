@@ -49,15 +49,32 @@
     <div class="content">
     </div> 
   </section>
+  
   <style>
-    .home{
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      background: url(Arca.png) no-repeat;
-      background-size: cover;
-      background-position: center;
+  @media (max-width: 991px) {
+    section {
+      padding: 2rem 7%;
     }
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0; /* Certifique-se de que não haja margens no body */
+  }
+  
+  .home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(Arca.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  .home .content {
+    max-width: 60rem;
+  }
   </style>
 
 <section class="culto" id="culto">
@@ -68,7 +85,6 @@
       <img src="culto.png" alt="">
       <h3>Venha Ouvir a Palavra</h3>
       <p>Venha ouvir a palavra com todos nós na igreja, um lugar de comunhão e fé. Junte-se a nós para momentos de inspiração e fortalecimento espiritual. Todos são bem-vindos!</p>
-      <a href="#" class="btn">Junta-se</a>
     </div>
   </div>
 </section>
@@ -137,8 +153,10 @@
   <h1 class="heading"><span>LOCALIZAÇÃO</span></h1>
   <div class="row">
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3828.2578408117906!2d-48.9053893!3d-16.36082265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zUi4gTDIzLCBHb2nDoXM!5e0!3m2!1spt-BR!2sbr!4v1703385538458!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="credit"><span>RESIDENCIAL LEBLON </span>RUA L23.</div>
 
 </section>
+
 
 <!-- roda pé -->
 <section class="footer">
@@ -163,6 +181,6 @@
 </section>
 
   <!-- Custom Js -->
-  <script src="js/script.Js"></script>
+  <script src="script.Js"></script>
 </body>
 </html>
